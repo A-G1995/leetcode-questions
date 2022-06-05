@@ -25,4 +25,5 @@ def mergeTwoLists(l1: ListNode, l2: ListNode) -> ListNode:
             current.next = l2
         
         return head.next
-#print(mergeTwoLists(ListNode(1, ListNode(2, ListNode(4))), ListNode(1, ListNode(3, ListNode(4)))))
+        
+print(mergeTwoLists(ListNode(1, ListNode(2, ListNode(4))), ListNode(1, ListNode(3, ListNode(4)))))
