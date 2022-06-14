@@ -1,12 +1,10 @@
 def lengthOfLastWord(s: str):
     if len(s) == 1:
-        return len(s)
+            return len(s)
     result = s.split(" ")
+    result.reverse()
     for i in result:
         if i == "":
-            result.remove(i)
-        else:    
-            i = i.strip()
-    return result[-1]    
-
-print(lengthOfLastWord("   fly me   to   the moon  "))
+            continue
+        else:
+            return len(i)
